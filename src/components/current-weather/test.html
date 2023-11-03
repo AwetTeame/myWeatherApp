@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let add = (num1, num2) => {
+                return num1 + num2;
+            }
+            let sum = add(23,24);
+            console.log(sum)
+
+            const numb = [1, 2, 3, 4, 5]
+            const newNumb = numb.map((Numb,ind,arr) => {
+                return Numb * 2;
+            })
+
+            console.log (newNumb);
+
+            const products = [
+                {name: 'laptop',
+                 price: 5000,
+                 count:  4,
+                },
+                {name: 'desktop',
+                 price:  6000,
+                 count: 10,
+                },
+                {name: 'mobile',
+                 price: 1000,
+                 count:   20,}
+            ];
+
+            const totalPrice = products.map(item => ({
+                name: item.name,
+                totalValue: item.price*item.count
+            }))
+
+            console.log(totalPrice);
+        </script>
+    </body>
+</html>
